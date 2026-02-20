@@ -1,0 +1,12 @@
+.fraud-card {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+}
+
+.safe {
+  color: #00ff9d;
+  font-weight: bold;
+}
