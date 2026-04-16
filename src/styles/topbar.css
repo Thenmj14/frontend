@@ -2,11 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 24px;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(12px);
-  border-radius: 16px;
-  color: white;
+  margin-bottom: 24px;
+  padding: 0 24px;
+}
+
+.topbar-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.logout-btn {
+  background: #f3f4f6;
+  color: #374151;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #e5e7eb;
 }
 
 .topbar-right {
@@ -34,7 +53,7 @@
 .theme-btn {
   background: transparent;
   border: none;
-  color: white;
+  color: #6b7280;
   cursor: pointer;
 }
 
@@ -42,21 +61,24 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  color: white;
 }
 
 /* ===== Mobile Topbar ===== */
 @media (max-width: 768px) {
   .topbar {
     padding: 12px 16px;
+    margin-bottom: 16px;
+    justify-content: flex-end; /* since title might be hidden or just show logout */
   }
 
-  .logo {
-    font-size: 18px;
+  .topbar-title {
+    display: none;
   }
 
   .profile {

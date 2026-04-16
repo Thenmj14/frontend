@@ -1,24 +1,30 @@
 import "../styles/stats.css";
 
-function StatsCards() {
-  const stats = [
-    { title: "Total Balance", value: "₹4,25,000", icon: "💰" },
-    { title: "Today's Profit", value: "+₹12,540", icon: "📈" },
-    { title: "Active Trades", value: "08", icon: "⚡" },
-    { title: "Transactions", value: "152", icon: "📊" },
-  ];
-
+function StatsCards({ totalTransactions, totalBuy, totalSell, profit, price }) {
   return (
     <div className="stats-grid">
-      {stats.map((item, index) => (
-        <div className="stat-card" key={index}>
-          <div className="stat-icon">{item.icon}</div>
-          <div>
-            <h4>{item.title}</h4>
-            <h2>{item.value}</h2>
-          </div>
-        </div>
-      ))}
+      <div className="stat-card">
+        <span className="stat-title">Trade Volume</span>
+        <span className="stat-value">{totalTransactions}</span>
+      </div>
+      <div className="stat-card">
+        <span className="stat-title">Portfolio Limit</span>
+        <span className="stat-value">₹{totalBuy.toFixed(2)}</span>
+      </div>
+      <div className="stat-card">
+        <span className="stat-title">Realized Revenue</span>
+        <span className="stat-value">₹{totalSell.toFixed(2)}</span>
+      </div>
+      <div className="stat-card">
+        <span className="stat-title">Net P&L</span>
+        <span className="stat-value" style={{ color: profit >= 0 ? '#10b981' : '#ef4444' }}>
+          {(profit >= 0 ? '+' : '-')}₹{Math.abs(profit).toFixed(2)}
+        </span>
+      </div>
+      <div className="stat-card">
+        <span className="stat-title">Live Asset Price</span>
+        <span className="stat-value">₹{price.toFixed(2)}</span>
+      </div>
     </div>
   );
 }

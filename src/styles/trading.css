@@ -1,0 +1,291 @@
+.market-container {
+  padding: 24px 0;
+  max-width: 1200px;
+}
+
+.market-header {
+  margin-bottom: 24px;
+}
+
+.market-header h2 {
+  color: #111827;
+  font-size: 28px;
+  margin: 0 0 4px 0;
+}
+
+.market-header p {
+  color: #6b7280;
+  margin: 0;
+  font-size: 15px;
+}
+
+.market-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 24px;
+  align-items: start;
+}
+
+/* Stocks List Card */
+.stocks-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.stocks-card-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.stocks-card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111827;
+}
+
+.stocks-list {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.stock-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.stock-item:hover {
+  background: #f9fafb;
+}
+
+.stock-item.active {
+  background: #f5f3ff;
+  border-left: 4px solid #8b5cf6;
+  padding-left: 20px; /* Compensate for border */
+}
+
+.stock-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stock-sym {
+  font-weight: 700;
+  color: #111827;
+  font-size: 16px;
+}
+
+.stock-name {
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.stock-price-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.stock-price {
+  font-weight: 600;
+  color: #111827;
+  font-size: 15px;
+}
+
+.stock-change {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.stock-change.up { color: #10b981; }
+.stock-change.down { color: #ef4444; }
+
+
+/* Order Ticket */
+.order-ticket-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  padding: 30px;
+  position: sticky;
+  top: 24px;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.ticket-symbol {
+  margin: 0 0 4px 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.ticket-name {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.ticket-live-price {
+  text-align: right;
+}
+
+.ticket-live-price h2 {
+  margin: 0 0 4px 0;
+  font-size: 24px;
+  color: #111827;
+}
+
+.ticket-live-price span {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.ticket-live-price span.up { color: #10b981; }
+.ticket-live-price span.down { color: #ef4444; }
+
+
+/* Ticket Form */
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ticket-form .input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.ticket-form .input-group input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.ticket-form .input-group input:focus {
+  border-color: #8b5cf6;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1);
+}
+
+.order-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #f8fafc;
+  border-radius: 12px;
+}
+
+.summary-label {
+  color: #475569;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.summary-value {
+  color: #0f172a;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ticket-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.buy-action-btn, 
+.sell-action-btn {
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+}
+
+.buy-action-btn { background: #10b981; }
+.buy-action-btn:hover:not(:disabled) { background: #059669; }
+
+.sell-action-btn { background: #ef4444; }
+.sell-action-btn:hover:not(:disabled) { background: #dc2626; }
+
+.buy-action-btn:disabled,
+.sell-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ticket-msg {
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.ticket-msg.success {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.ticket-msg.error {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.market-disclaimer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+  text-align: center;
+}
+
+.market-disclaimer p {
+  margin: 0;
+  font-size: 11px;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+/* Tablet / Mobile */
+@media (max-width: 1024px) {
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-ticket-card {
+    position: static;
+  }
+}

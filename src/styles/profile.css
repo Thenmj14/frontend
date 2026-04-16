@@ -1,0 +1,361 @@
+.profile-container {
+  padding: 10px 0;
+}
+
+.profile-header-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  margin-bottom: 24px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8B5CF6, #6D28D9);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.3);
+}
+
+.profile-info h2 {
+  margin: 0 0 4px 0;
+  color: #111827;
+  font-size: 24px;
+}
+
+.profile-info p {
+  margin: 0;
+  color: #8B5CF6;
+  font-weight: 600;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+}
+
+.profile-stat-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-stat-card .stat-label {
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.profile-stat-card .stat-val {
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.profit-up {
+  color: #10b981 !important;
+}
+
+.profit-down {
+  color: #ef4444 !important;
+}
+
+.suggestion-card {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  border-radius: 20px;
+  padding: 24px;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.suggestion-card h3 {
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+.suggestion-card p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.password-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  height: 100%;
+}
+
+.password-card h3 {
+  margin: 0 0 4px 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+.password-card p {
+  color: #6b7280;
+  margin: 0 0 24px 0;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  color: #374151;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.input-group input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  outline: none;
+  font-size: 15px;
+  color: #111827;
+  transition: all 0.2s ease;
+}
+
+.input-group input:focus {
+  border-color: #8b5cf6;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.save-btn {
+  padding: 14px 24px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-btn:hover {
+  background: #7c3aed;
+}
+
+.pwd-msg {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Manage Funds styling */
+.funds-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+.funds-card h3 {
+  margin: 0 0 4px 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+.funds-card p {
+  color: #6b7280;
+  margin: 0 0 24px 0;
+  font-size: 14px;
+}
+
+.funds-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.deposit-btn {
+  flex: 1;
+  padding: 14px 24px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.deposit-btn:hover { background: #7c3aed; }
+
+.withdraw-btn {
+  flex: 1;
+  padding: 14px 24px;
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.withdraw-btn:hover { background: #f9fafb; }
+
+.transfer-msg {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.security-toggle-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  height: max-content;
+}
+
+.security-toggle-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.security-toggle-header h3 {
+  margin: 0;
+  color: #111827;
+  font-size: 20px;
+}
+
+.toggle-btn {
+  background: #f3f4f6;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #4b5563;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: #e5e7eb;
+}
+
+.security-content {
+  margin-top: 24px;
+  border-top: 1px solid #f3f4f6;
+  padding-top: 24px;
+}
+
+.security-content p {
+  color: #6b7280;
+  margin: 0 0 24px 0;
+  font-size: 14px;
+}
+
+/* Editing styles */
+.profile-actions {
+  display: flex;
+}
+
+.edit-profile-btn {
+  padding: 10px 20px;
+  background: #f3f4f6;
+  color: #4b5563;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-profile-btn {
+  padding: 10px 20px;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.save-profile-btn:hover {
+  background: #059669;
+}
+
+.edit-profile-btn:hover {
+  background: #e5e7eb;
+}
+
+.profile-avatar {
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-edit-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  border-radius: 50%;
+}
+
+.profile-name-input {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  border: 1px solid #8b5cf6;
+  border-radius: 8px;
+  padding: 4px 12px;
+  outline: none;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .profile-grid {
+    grid-template-columns: 1fr;
+  }
+}
